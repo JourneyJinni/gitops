@@ -1,1 +1,5 @@
-
+kind: service
+apiVersion: v1
+metadata:
+  name: journeyjinni-backend
+  namespace: journeyjinni
