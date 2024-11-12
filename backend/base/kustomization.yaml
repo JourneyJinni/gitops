@@ -3,6 +3,8 @@ kind: Kustomization
 
 resources:
   - service.yaml
+  - deployment.yaml
+  - secret.yaml
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
