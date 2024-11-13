@@ -2,12 +2,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: journeyjinni-backend
+  namespace: journeyjinni
 spec:
-  replicas: 1  # 개발 환경에서는 하나의 인스턴스만 사용
+  replicas: 1
+  selector:
+    matchLabels:
+      app: journeyjinni-backend
   template:
+    metadata:
+      labels:
+        app: journeyjinni-backend
     spec:
       containers:
         - name: journeyjinni-backend
-          image: jinnicontainerregistry.azurecr.io/jinni
+          image: jinnicontainerregistry.azurecr.io/jinni:latest
           ports:
             - containerPort: 8080
