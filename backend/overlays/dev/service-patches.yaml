@@ -1,0 +1,20 @@
+kind: Service # 리소스의 유형
+apiVersion: v1 # API 버전
+metadata: # 서비스이름, 네임스페이스, 리소스 식벽을 위한 라벨 설정
+  name: journeyjinni-backend
+  namespace: journeyjinni
+  labels:
+    app: journeyjinni-backend
+    chart: journeyjinni-backend-1.0.0
+    release: journeyjinni-backend-dev
+  spec: # 서비스의 특성과 동작을 정의
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+    selector:
+      app: journeyjinni-backend
+      chart: journeyjinni-backend-1.0.0 # pod를 선택
+      release: journeyjinni-backend-dev
+    type: ClusterIP
+    sessionAffinity: None
