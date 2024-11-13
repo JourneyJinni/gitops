@@ -3,11 +3,11 @@ kind: Kustomization
 namespace: journeyjinni
 
 
-resources:
 
+resources:
 - secret.yaml
 - configmap.yaml
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
-  newTag: "20241113005102"
+  newTag: "20241113094323"
