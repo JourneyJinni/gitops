@@ -10,4 +10,4 @@ resources:
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
-  newTag: "20241106121013"
+  newTag: "20241113005102"
