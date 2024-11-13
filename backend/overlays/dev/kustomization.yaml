@@ -8,7 +8,5 @@ bases:
 
   # Dev 환경에서 사용할 추가적인 패치를 적용
 patchesStrategicMerge:
-  - deployment.yaml
   - deployment-patches.yaml
-  - service.yaml
   - service-patches.yaml
