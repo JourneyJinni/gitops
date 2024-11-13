@@ -4,8 +4,7 @@ namespace: journeyjinni
 
 
 resources:
-- service.yaml
-- deployment.yaml
+
 - secret.yaml
 - configmap.yaml
 
