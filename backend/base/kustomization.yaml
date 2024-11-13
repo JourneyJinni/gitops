@@ -8,6 +8,7 @@ resources:
 - secret.yaml
 - configmap.yaml
 - deployment.yaml
+- service.yaml
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
