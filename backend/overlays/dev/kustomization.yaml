@@ -6,7 +6,6 @@ namespace: journeyjinni
 bases:
   - ../../base
 
-  # Dev 환경에서 사용할 추가적인 패치를 적용
-patchesStrategicMerge:
-  - deployment-patches.yaml
-  - service-patches.yaml
+patches:
+  - path: deployment-patches.yaml
+  - path: service-patches.yaml
