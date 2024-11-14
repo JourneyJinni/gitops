@@ -7,3 +7,9 @@ spec:
   selector:
     matchLabels:
       app: journeyjinni-backend
+  template:
+    metadata:
+      labels:
+        app: journeyjinni-backend
+    spec:
+      containers: []
