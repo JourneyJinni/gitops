@@ -3,3 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: journeyjinni-backend
   namespace: journeyjinni
+spec:
+  selector:
+    matchLabels:
+      app: journeyjinni-backend
