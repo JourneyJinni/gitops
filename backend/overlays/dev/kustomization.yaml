@@ -5,11 +5,11 @@ namespace: journeyjinni
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
-  newTag: "20241113094323"
+  newTag: "20241119015211"
 
 resources:
-  - ../../base
+- ../../base
 
 patches:
-  - path: deployment-patches.yaml
-  - path: service-patches.yaml
+- path: deployment-patches.yaml
+- path: service-patches.yaml
