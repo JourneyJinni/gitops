@@ -17,5 +17,5 @@ spec:  # 서비스의 특성과 동작을 정의
     app: journeyjinni-backend
     chart: journeyjinni-backend-1.0.0
     release: journeyjinni-backend-dev
-  type: ClusterIP
+  type: LoadBalancer
   sessionAffinity: None
