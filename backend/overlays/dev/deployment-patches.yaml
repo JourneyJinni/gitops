@@ -8,6 +8,6 @@ spec:
     spec:
       containers:
       - name: journeyjinni-backend
-        image: jinnicontainerregistry.azurecr.io/jinni
+        image: jinniregistry.azurecr.io/jinni
         ports:
         - containerPort: 8080
