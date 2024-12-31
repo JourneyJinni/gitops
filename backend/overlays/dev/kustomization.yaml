@@ -4,8 +4,6 @@ kind: Kustomization
 namespace: journeyjinni
 
 images:
-- name: jinnicontainerregistry.azurecr.io/jinni
-  newTag: "20241119015211"
 - name: jinniregistry.azurecr.io/jinni
   newTag: "20241226154031"
 
