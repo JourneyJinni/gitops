@@ -2,6 +2,6 @@ kind: ConfigMap
 apiVersion: v1
 metadata:
   name: journeyjinni-frontend
-  namespace: journeyjinni-web
+  namespace: journeyjinni
   labels:
     app: jinni
