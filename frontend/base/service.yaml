@@ -1,0 +1,10 @@
+apiVersion: v1 # API 버전
+kind: Service
+metadata: # 서비스이름, 네임스페이스, 리소스 식벽을 위한 라벨 설정
+  name: journeyjinni-frontend
+  namespace: journeyjinni-web
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

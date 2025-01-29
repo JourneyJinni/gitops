@@ -1,0 +1,17 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: journeyjinni-frontend
+  namespace: journeyjinni-web
+spec:
+  selector:
+    matchLabels:
+      app: journeyjinni-frontend
+  template:
+    metadata:
+      labels:
+        app: journeyjinni-frontend
+    spec:
+      containers:
+      - name: journeyjinni-frontend
+        image: placeholder-image  # 기본적으로 이미지가 필요하지만, 실제 이미지는 오버레이에서 패치

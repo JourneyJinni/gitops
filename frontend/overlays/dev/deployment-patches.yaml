@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: journeyjinni-frontend
+  namespace: journeyjinni-web
+spec:
+  template:
+    spec:
+      containers:
+      - name: journeyjinni-frontend
+        image: jinniregistry.azurecr.io/jinni
+        ports:
+        - containerPort: 8080
