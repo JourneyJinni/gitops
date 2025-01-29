@@ -10,4 +10,4 @@ spec:
       - name: journeyjinni-frontend
         image: jinniregistry.azurecr.io/jinni
         ports:
-        - containerPort: 8080
+        - containerPort: 5173
