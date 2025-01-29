@@ -12,7 +12,7 @@ spec:  # 서비스의 특성과 동작을 정의
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 5173
   selector:  # pod를 선택
     app: journeyjinni-frontend
   type: LoadBalancer
