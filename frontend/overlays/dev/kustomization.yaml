@@ -5,7 +5,7 @@ namespace: journeyjinni
 
 images:
 - name: jinniregistry.azurecr.io/jinni
-  newTag: front_20250209072450
+  newTag: front_20250209073039
 
 resources:
 - ../../base
