@@ -1,8 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: journeyjinni-ingress
+  name: journeyjinni-backend-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
-  rules: []
+  rules:
+  - http:
+      paths:
+      - path: /default
+        pathType: Prefix
+        backend:
+          service:
+            name: placeholder-service
+            port:
+              number: 80
