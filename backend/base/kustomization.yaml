@@ -9,7 +9,6 @@ resources:
 - configmap.yaml
 - deployment.yaml
 - service.yaml
-- Ingress.yaml
 
 images:
 - name: jinnicontainerregistry.azurecr.io/jinni
